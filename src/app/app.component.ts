@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-Proyect';
+  
+  edit = true;
+
+  toggleEdit = () => {
+    this.edit = !this.edit;
+  }
+
 }

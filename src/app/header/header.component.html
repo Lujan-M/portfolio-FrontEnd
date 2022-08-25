@@ -1,0 +1,22 @@
+<div class="nav_bar">
+    <a class="logo_container" href="https://argentinaprograma.inti.gob.ar/">
+        <img class="logo" src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png" alt="argentinaprograma_logo">
+    </a>
+    <div class="user_container">
+        <a href="https://www.linkedin.com/in/sabrina-maidana/" target="_blank" class="socials">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Lujan-M" target="_blank" class="socials">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <button class="login" (click)="show=!show" (click)="this.toggleEdit.emit()">Login</button>
+    </div>
+</div>
+<div class="banner_container">
+    <div class="edit-icons" *ngIf="edit">
+        <button class="edit"><i class="fa-solid fa-camera"></i></button>      
+    </div>
+    <img src="https://wallpaper.dog/large/20449168.jpg" alt="cute cat" class="banner">
+</div>
+
+<app-login *ngIf="show" (toggleShow)="toggleShow()"></app-login>

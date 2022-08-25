@@ -1,0 +1,21 @@
+<section class="skills">
+    <h1 class="section-title">Hard & Soft Skills</h1>
+    <ul class="list">
+        <li class="elements" *ngFor="let elem of dummy_data">
+            <div class="edit-icons" *ngIf="edit">
+                <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="close" *ngIf="false"> <i class="fa-solid fa-square-xmark"></i></button>      
+            </div>
+            <div class="pie no-round" [style]="{'--p': elem.porcentaje, '--c': elem.color}">{{elem.skill}}</div>
+            <div class="action-icons" *ngIf="false">
+                <button class="cancel">Cancelar</button>
+                <button class="action">Guardar</button>
+            </div>
+        </li>
+        <div class="add-container">
+            <div class="add">
+                <span class="material-symbols-rounded">add</span>
+            </div>
+        </div>
+    </ul>
+</section>

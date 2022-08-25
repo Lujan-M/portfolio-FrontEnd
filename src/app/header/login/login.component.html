@@ -1,0 +1,17 @@
+<div class="login-container">
+    <form class="form">
+        <i id="close" class="fa-solid fa-square-xmark" (click)="this.toggleShow.emit()"></i>
+        <h1 class="title">Iniciar sesión</h1>
+        <div class="inputainer">
+            <i class="fa-solid fa-envelope" id="envelope"></i>
+            <input type="text" (change)="handleChange($event)" (focus)="focus($event)" name="email" id="email" value="{{user.email}}" placeholder="Correo electrónico" required>
+        </div>
+        <p class="error" id="validation">* Correo inválido</p>
+        <div class="inputainer">
+            <i class="fa-solid fa-lock" id="lock"></i>
+            <input type="password" name="password" id="password" (change)="handleChange($event)" (focus)="focus($event)" value="{{user.contrasena}}" placeholder="Contraseña" required >
+        </div>
+        <p class="error" id="validationpass">* Contraseña inválida</p>
+        <button (click)="login($event)" type="submit">Login</button>
+    </form>
+</div>

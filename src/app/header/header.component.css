@@ -1,0 +1,70 @@
+.banner_container {
+    position: relative;
+    margin: 20px;
+    height: 45vh;
+    max-height: 560px;
+    max-width: 1240px;
+    margin: auto;
+}
+.nav_bar {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(74, 139, 204);
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.banner {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    
+}
+
+.logo_container {
+    
+}
+
+.logo {
+    width: 150px;
+    object-fit: contain;
+}
+
+.user_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials {
+    font-size: 30px;
+    color: antiquewhite;
+    padding: 3px 4px 1px 4px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.socials:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.login {
+    font-size: 16.2px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 7px;
+    margin-bottom: 1.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(250, 235, 215);
+    transition: background .3s;
+}
+
+.login:hover{
+    background: rgba(0, 0, 0, 0.6);
+}

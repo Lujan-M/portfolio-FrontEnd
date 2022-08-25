@@ -1,0 +1,62 @@
+.about_container {
+    position: relative;
+    display: flex;
+    padding: 90px 50px;
+    max-width: 1240px;
+}
+
+.profile-container {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: -250px;
+    left: -125px;
+}
+
+.edit-profile {
+    top: -143px;
+    left: 0;
+}
+
+.profile {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.description {
+    width: 40%;
+    min-width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.description h2 {
+    font-size: 35px;
+}
+
+.name {
+    
+}
+
+.title {
+
+}
+
+.aboutme {
+    position: relative;
+    padding: 0 30px;
+    font-size: 20px;
+    flex: 1;
+}
+
+.aboutme h2 {
+    font-size: 30px;
+}
+
+.aboutme h2 {
+    margin-top: 0;
+}
+
