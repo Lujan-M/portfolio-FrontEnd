@@ -13,7 +13,8 @@ export class AboutComponent implements OnInit {
     about:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem a porro, libero ducimus, totam laudantium voluptate facilis nemo enim nulla magni.'
   }
 
-  editing = false
+  editing_title = false
+  editing_about = false
 
   @Input() edit!: boolean;
 

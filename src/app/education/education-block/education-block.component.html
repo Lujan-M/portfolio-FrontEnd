@@ -1,0 +1,16 @@
+<div class="edit-icons" *ngIf="edit">
+    <button (click)="editing=true" class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+    <button class="close" *ngIf="false"> <i class="fa-solid fa-square-xmark"></i></button>      
+</div>
+<div class="education-logo">
+    <img src={{data.logo}} alt="logo-empresa">
+    <div class="fecha">{{data.fecha}}</div>
+</div>
+<div class="education-info">
+    <h3>{{data.actividad}}</h3>
+    <p>{{data.descripcion}}</p>
+</div>
+<div class="action-icons" *ngIf="editing">
+    <button (click)="editing=false" class="cancel">Cancelar</button>
+    <button (click)="editing=false" class="action">Guardar</button>
+</div>

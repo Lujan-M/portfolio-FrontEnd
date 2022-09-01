@@ -2,23 +2,9 @@
     <h1 class="section-title">Educación</h1>
     <ul class="list">
         <li class="elements" *ngFor="let elem of dummy_data">
-            <div class="edit-icons" *ngIf="edit">
-                <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
-                <button class="close" *ngIf="false"> <i class="fa-solid fa-square-xmark"></i></button>      
-            </div>
-            <div class="education-logo">
-                <img src={{elem.logo}} alt="logo-empresa">
-                <div class="fecha">{{elem.fecha}}</div>
-            </div>
-            <div class="education-info">
-                <h3>{{elem.actividad}}</h3>
-                <p>{{elem.descripcion}}</p>
-            </div>
-            <div class="action-icons" *ngIf="false">
-                <button class="cancel">Cancelar</button>
-                <button class="action">Guardar</button>
-            </div>
+            <app-education-block class="block" [edit]="edit" [data]="elem"></app-education-block>
         </li>
         <div class="add"><span class="material-symbols-rounded">add</span></div>
     </ul>
 </section>
+ 

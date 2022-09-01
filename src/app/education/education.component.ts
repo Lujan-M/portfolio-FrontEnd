@@ -22,6 +22,7 @@ export class EducationComponent implements OnInit {
     },
   ];
 
+
   @Input() edit!: boolean;
   
   constructor() { }

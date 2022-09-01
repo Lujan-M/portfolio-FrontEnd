@@ -9,6 +9,8 @@ import { EducationComponent } from './education/education.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { LoginComponent } from './header/login/login.component';
+import { EducationBlockComponent } from './education/education-block/education-block.component';
+import { ExperienceBlockComponent } from './experience/experience-block/experience-block.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { LoginComponent } from './header/login/login.component';
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    LoginComponent
+    LoginComponent,
+    EducationBlockComponent,
+    ExperienceBlockComponent
   ],
   imports: [
     BrowserModule
