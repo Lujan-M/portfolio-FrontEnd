@@ -14,9 +14,10 @@
 </div>
 <div class="banner_container">
     <div class="edit-icons" *ngIf="edit">
-        <button class="edit"><i class="fa-solid fa-camera"></i></button>      
+        <button (click)="handle_click($event)" class="edit" ><i class="fa-solid fa-camera"></i></button>
+        <input (change)="upload_file($event)" type="file" name="banner" id="up_banner">
     </div>
-    <img src="https://wallpaper.dog/large/20449168.jpg" alt="cute cat" class="banner">
+    <img src={{data.banner}} alt="cute cat" class="banner">
 </div>
 
 <app-login *ngIf="show" (toggleShow)="toggleShow()"></app-login>

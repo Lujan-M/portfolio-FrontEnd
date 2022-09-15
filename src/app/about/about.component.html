@@ -1,16 +1,17 @@
 <div class="about_container">
     <div class="description">
         <div class="edit-profile edit-icons" *ngIf="edit">
-            <button class="edit"><i class="fa-solid fa-camera"></i></button>    
+            <button (click)="handle_click($event)" class="edit" ><i class="fa-solid fa-camera"></i></button>
+            <input (change)="upload_file($event)" type="file" name="" id="up_profile">  
         </div>
         <div class="profile-container">
-            <img src="https://wallpaper.dog/large/20513815.jpg" alt="profile_pic" class="profile">
+            <img src={{data.perfil}} alt="profile_pic" class="profile">
         </div>
         <div *ngIf="edit" (click)="editing_title=true" class="edit-icons">
             <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>    
         </div>
-        <h2>{{dummy_data.nombre}}</h2>
-        <h3 class="title">{{dummy_data.titulo}}</h3>
+        <h2>{{data.nombre}} {{data.apellido}}</h2>
+        <h3 class="title">{{data.titulo}}</h3>
         <div class="action-icons" *ngIf="editing_title">
             <button class="action">Guardar</button>
         </div>
@@ -21,9 +22,9 @@
             <button class="close" *ngIf="false"> <i class="fa-solid fa-square-xmark"></i></button> 
         </div>
         <h2>Sobre mi</h2>
-        <p *ngIf="!editing_about">{{dummy_data.about}}</p>
+        <p *ngIf="!editing_about">{{data.acerca_de}}</p>
         <div class="texarea-container">
-            <textarea class="textarea" name="about" id="about-input" [value]="dummy_data.about" *ngIf="editing_about"></textarea>
+            <textarea class="textarea" name="about" id="about-input" [value]="data.acerca_de" *ngIf="editing_about"></textarea>
         </div>
         <div class="action-icons" *ngIf="editing_about">
             <button (click)="editing_about=false" class="cancel">Cancelar</button>
